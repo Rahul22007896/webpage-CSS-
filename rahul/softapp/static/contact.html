@@ -1,165 +1,240 @@
-<!DOCTYPE html>
 <html>
-<head>
-    <title>Contact Us</title>
-    <style>
-        b{
-            color:rgb(240, 176, 0);
-        }
-        p {
-            color: rgb(255, 255, 255);
-        }
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Page</title>
+    <style type="text/css">
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .banner {
+        width: 100%;
+        height: 95vh;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.75),
+            rgba(0, 0, 0, 0.75)
+          ),
+          url(priya\ softapp.webp);
+        background-size: cover;
+        background-position: center;
+      }
+      .navbar {
+        width: 85%;
+        margin: auto;
+        padding: 35px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .bg-contact {
+        border: 1px;
+        padding: 10px;
+        color: white;
+        background-color: peachpuff;
+        border-radius: 30px;
+      }
+      .logo {
+        color: orange;
+        font-size: 40px;
+        font-weight: 700;
+        letter-spacing: 3px;
+      }
+      span {
+        color: wheat;
+      }
+      .navbar form {
+        width: 300px;
+        height: 40px;
+        display: flex;
+        background: black;
+        padding: 1px 1px;
+        font-size: 15px;
+        border-radius: 10px;
+        backdrop-filter: blur(4px) saturate(180%);
+      }
+      .navbar form input {
+        background: transparent;
+        flex: 1;
+        border: 0;
+        outline: none;
+        padding: 12px 20px;
+        font-size: 15px;
+        color: white;
+      }
+      ::placeholder {
+        color: white;
+      }
+      .navbar form button {
+        border: 0;
+        outline: none;
+        padding: 5px 20px;
+        color: bl;
+        border-radius: 10px;
+        background: aquamarine;
+        cursor: pointer;
+      }
+      .navbar li {
+        list-style: none;
+        display: inline-block;
+        margin: 0 20px;
+        position: relative;
+      }
+      .navbar li a {
+        text-decoration: none;
+        color:white;
+        text-transform: uppercase;
+      }
+      .navbar li:hover {
+        border: 1px;
+        padding: 10px;
 
-        body {
-            background:url(final.jpg);
-        }
+        transition: 0.5s;
+        cursor: pointer;
+        border-radius: 30px;
+        background: rgb(234, 255, 0);
+        color: #081b29;
+        box-shadow: white;
+      }
+      .box {
+        display: flex;
+        column-gap: 40px;
+        background: transparent;
+        position: relative;
+        top: 50px;
+        width: 220px;
+      }
+      .box-1 {
+        height: 400px;
+        width: 400px;
+        border: 3px solid white;
+        border-radius: 20px;
+        background: transparent;
+        position: relative;
+        left: 250px;
+      }
+      .box-2 {
+        height: 400px;
+        width: 400px;
+        border: 3px solid white;
+        border-radius: 20px;
+        background: transparent;
+        position: relative;
+        left: 300px;
+      }
+      .box-1 form {
+        display: flex;
+        color: antiquewhite;
+        background: transparent;
+        padding: 10px;
+        font-size: 15px;
+        position: relative;
+        top: 15px;
+      }
+      .box-1 form input {
+        background: transparent;
+        display: flex;
+        border: 1px solid antiquewhite;
+        border-radius: 10px;
+        padding: 15px 30px;
+        font-size: 15px;
+        color: whitesmoke;
+        position: relative;
+        top: 30px;
+      }
+      .box-1 form textarea {
+        background: transparent;
+        color: white;
+        padding: 15px 10px;
+        position: relative;
+        top: 30px;
+        left: 20px;
+        border: 1px solid white;
+        border-radius: 10px;
+        width: 300px;
+      }
+      .box-1 form button {
+        border: 0;
+        outline: none;
+        padding: 10px 20px;
+        color: black;
+        border-radius: 30px;
+        background: white;
+        cursor: pointer;
+        position: relative;
+        top: 50px;
+      }
+      .box-2 h2 {
+        color: white;
+        position: relative;
+        top: 25px;
+        left: 50px;
+        font-size: 30px;
+      }
+      .box-2 p {
+        color: white;
+        position: relative;
+        top: 50px;
+        padding: 10px 80px;
+      }
+      .box-2 span {
+        color: wheat;
+        font-size: 20px;
+      }
+      footer {
+        border: 1px;
+        padding: 10px;
 
-        .yourinfo {
-            background:url(bg4.jpg);
-            border:5px solid rgb(0, 0, 0);
-            margin-right: 800px ;
-            
-            margin-top: 200px; /* Adjusted margin-top */
-            padding: 10px; /* Added padding for better spacing */
-        }
-        .yourinfo input[type="text"] {
-            width: 500px;
-            transition: background-color 0.3s; 
-        }
-        .yourinfo input[type="text"]:focus {
-    /* Change background color when input is focused */
-    background-color: #000000; /* Adjust the color as needed */
-}
-
-        .buttons {
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #3498db;
-            color: rgb(255, 255, 255);
-            border: none;
-            cursor: pointer;
-            transition: background-color 0.3s, color 0.3s;
-        }
-
-        .buttons:hover {
-            color: aqua;
-            background-color: #4234db;
-        }
-        .styled form {
-            margin-top: 20px;
-            display: flex;
-            justify-content: space-evenly;
-        }
-        .styled form {
-            display: flex;
-            justify-content: space-between;
-        }
-        .styled [type="button"] {
-            padding: 10px 20px; /* button size */
-            background-color: #3498db00; /* initial background color */
-            color: rgb(245, 245, 245); /*initial text color */
-            border: none;
-            transition: background-color 0.3s, color 0.3s; /*smooth transition */
-        }
-        .styled [type="button"]:hover {
-            background-color:purple; /*background color on hover */
-            color:aqua; /*text color on hover */
-        }
-        .styled [type="submit"] {
-            border-radius: 10px;
-            padding: 5px 10px; /* button size */
-            background-color: #000000; /* initial background color */
-            color: #ffffff; /*initial text color */
-            border: none;
-            transition: background-color 0.3s, color 0.3s; /*smooth transition */
-        }
-        .styled [type="submit"]:hover {
-            background-color:purple; /*background color on hover */
-            color:#ffffff; /*text color on hover */
-        }
-        .styled [type="text"] {
-            margin-left: 500px;
-            transition: background-color 0.3s; 
-            background-color:bisque;
-        }
-        .styled input[type="text"]:focus {
-    /* Change background color when input is focused */
-    background-color:rgb(224, 127, 224); /* Adjust the color as needed */
-}
-    
-.company{
-
-margin-left: 900px;
-margin-top: -330px;
-background:url(bg5.jpg);
-
-scroll-padding-left: 5px;
-border:2px solid rgb(0, 0, 0);
-}
-.message textarea {
-        background-color: rgb(255, 255, 255); /* Set the default background color */
-        color: white; /* Set the default text color */
-    }
-
-    /* Styles for the text area when it is in focus */
-.message    textarea:focus {
-        background-color: cadetblue; /* Set the background color when in focus */
-        color:red; /* Set the text color when in focus */
-    }
+        transition: 0.5s;
+        cursor: pointer;
+        border-radius: 30px;
+        background: orange;
+        color: black;
+        box-shadow: 0 0 20px orange;
+      }
     </style>
-</head>
-<body>
-    <form class="styled">
-        <div>
-            <a href="mainpage.html">
-                <input type="button" value="HOME">
-            </a>
-            <a href="products.html">
-                <input type="button" value="OUR PRODUCTS">
-            </a>
-            <a href="employee.html">
-                <input type="button" value="ABOUT US">
-            </a>
-            <a href="sign.html">
-                <input type="button" value="SIGN IN">
-            </a>
-            <a href="contact.html">
-                <input type="button" value="CONTACT">
-            </a>
-            <input type="text" >
-            <input type="submit" value="SEARCH">
+  </head>
+  <body bgcolor="brown">
+    <div class="banner">
+      <br />
+      <div class="navbar">
+        <h1 class="logo">DI<span>GITAL</span>DR<span>EAMERS</span></h1>
+        <ul>
+          <li><a href="home.html"> Home </a></li>
+          <li><a href="product.html"> Product </a></li>
+          <li><a href="people.html"> people </a></li>
+          <li><a href="contact.html" class="bg-contact"> Contact </a></li>
+        </ul>
+        <form action="" method="get">
+          <input type="text" placeholder="Enter to Search" />
+          <button type="submit">Search</button>
+        </form>
+      </div>
+      <div class="box">
+        <div class="box-1">
+          <form>
+            <center>
+              <h1>Contact Us</h1>
+              <input type="text" placeholder="Your Name" />
+              <br />
+              <input type="email" placeholder="Your Email" />
+              <br />
+              
+              <br />
+              <button type="submit">Submit</button>
+            </center>
+          </form>
         </div>
-    </form>
-    <div class="yourinfo">
-        <center>
-        <p>Contact Information</p>
-        <div>            
-            <input type="text" maxlength="100" placeholder="Your Name"><br><br>
-            <input type="text" maxlength="100" placeholder="Your Email"><br><br>
-            <div class="message">
-            <textarea rows="5" cols="65" placeholder="Your Message"></textarea><br><br>
+        <div class="box-2">
+          <h2>Contact Information</h2>
+          <p>
+            <span>Address</span> :3RD Floor, Tower 12, FCA
+            Building No.78,PANCHALI NAGAR PHAE-2 MOGAPPAIR HR IN 2300235
+          </p>
+          <p><span>Email</span> : Digitaldreamers@gmail.com</p>
+          <p><span>Phone</span> : 9876543210</p>
         </div>
-            <input type="button" value="SUBMIT" class="buttons">
-        
-        </center>
-        </div>
+      </div>
     </div>
-    <div class="company">
-        <center>
-        <h3 style="color: rgb(255, 174, 0);">COMPANY CONTACT INFORMATION</h3>
-       <p> <b >Address</b></p>
-        <p >272,palkalai Nagar,palavakkam,East Coast Road,Chennai</p>
-        <b>Email</b>
-        <p>rahulict518@gmail.com</p>
-        <b>Phone</b>
-        <p >8754631061</p>
-    </center>
-    </div>
-</body>
-<br>
-<br>
-<br>
-<footer style="background-color:rgb(255, 255, 255);margin-top: 118px; border: none;">
-    <P style="color:#000000 ;"align="center">Designed and Devoloped by RAHUL K 212221043006 </P>    
-</footer>
+  </body>
 </html>

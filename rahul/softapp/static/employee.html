@@ -1,115 +1,185 @@
 <html>
-<title>ABOUT US</title>
-<style>
-    p{
-        color: antiquewhite;
-    }
-    body{
-        background:url(founderimg.jpg);
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>people page</title>
+    <style type="text/css">
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .banner {
+        width: 100%;
+        height: 95vh;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.75),
+            rgba(0, 0, 0, 0.75)
+          ),
+          url(backgroundweb\ 7.jpg );
         background-size: cover;
-    }
-    .styled form {
-        margin-top: 20px;
-            display: flex;
-            justify-content: space-between;
-        }
-        .styled [type="button"] {
-            padding: 10px 20px; /* button size */
-            background-color: #3498db00; /* initial background color */
-            color: #ffffff; /*initial text color */
-            border: none;
-            transition: background-color 0.3s, color 0.3s; /*smooth transition */
-        }
-        .styled [type="button"]:hover {
-            background-color:purple; /*background color on hover */
-            color:aliceblue; /*text color on hover */
-        }
-        .styled [type="submit"] {
-            border-radius: 10px;
-            padding: 5px 10px; /* button size */
-            background-color: #000000; /* initial background color */
-            color: #ffffff; /*initial text color */
-            border: none;
-            transition: background-color 0.3s, color 0.3s; /*smooth transition */
-        }
-        .styled [type="submit"]:hover {
-            background-color:purple; /*background color on hover */
-            color:#ffffff; /*text color on hover */
-        }
-        .styled [type="text"] {
-            margin-left: 500px;
-            transition: background-color 0.3s; 
-            background-color:bisque;
-        }
-        .styled input[type="text"]:focus {
-    /* Change background color when input is focused */
-    background-color:rgb(224, 127, 224); /* Adjust the color as needed */
-}
-.photos{
-    display:flex;
-    justify-content: space-around;
-    margin-top: 200px;
-}
-.names{
-    display:flex;
-    justify-content: space-around;
+        background-position: center;
+      }
+      .navbar {
+        width: 85%;
+        margin: auto;
+        padding: 35px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .bg-people {
+        border: 1px;
+        padding: 10px;
+        color: white;
+        
+        border-radius: 30px;
+      }
+      .logo {
+        color: orange;
+        font-size: 40px;
+        font-weight: 700;
+        letter-spacing: 3px;
+      }
+      span {
+        color: wheat;
+      }
+      form {
+        width: 300px;
+        height: 40px;
+        display: flex;
+        background: rgba(255, 255, 255, 0.2);
+        padding: 1px 1px;
+        font-size: 15px;
+        border-radius: 10px;
+        backdrop-filter: blur(4px) saturate(180%);
+      }
+      form input {
+        background: transparent;
+        flex: 1;
+        border: 0;
+        outline: none;
+        padding: 12px 20px;
+        font-size: 15px;
+        color: white;
+      }
+      ::placeholder {
+        color: white;
+      }
+      form button {
+        border: 0;
+        outline: none;
+        padding: 5px 20px;
+        color: white;
+        border-radius: 10px;
+        background:rgb(208, 255, 0);
+        cursor: pointer;
+      }
+      .navbar li {
+        list-style: none;
+        display: inline-block;
+        margin: 0 20px;
+        position: relative;
+      }
+      .navbar li a {
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+      }
+      .navbar li:hover {
+        border: 1px;
+        padding: 10px;
 
-}
-.position {
-    display: flex;
-    justify-content: space-around;
-    margin-left: 10px;
-    border-image:5px;
-    border-image: antiquewhite;
-}
+        transition: 0.5s;
+        cursor: pointer;
+        border-radius: 30px;
+        background: black;
+        color: #081b29;
+        box-shadow: 0 0 20px rgb(229, 255, 0);
+      }
+      .image {
+        position: relative;
+        border: 0;
+        top: 150px;
 
-</style>
-<body>
-    <form class="styled ">
-        <div class=>
-            <a href="mainpage.html">
-                <input type="button" value="HOME">
-            </a>
-            <a href="projects.html">
-                <input type="button" value="OUR PROJECTS">
-            </a>
-            <a href="employee.html">
-                <input type="button" value="ABOUT US">
-            </a>
-            <a href="sign.html">
-                <input type="button" value="SIGN IN">
-            </a>
-            <a href="contact.html">
-                <input type="button" value="CONTACT">
-            </a>  
-            <input type="text">
-            <input type="submit"value="SEARCH">  
-        </div>
-    </form>
-    <div class="photos">
-    <img src="FOUNDER.jpg" height="200" width="180">
-    <img src="COO.jpeg" height="200" width="200">
-    <img src="MD.png" height="200" width="200">
-    <img src="Team Lead.jpeg" height="200" width="200">
-    <img src="Brand Ambassador.jpg" height="200" width="200">
-</div>
-<div CLASS="names">
-    <P>MR RAHUL K</P>    
-    <P style="margin-left:-20;">MR KIRTIK ROSHAN G R</P>    
-    <P>MR RAGUL E</P>    
-    <P>MR KISHORE M</P>    
-    <P>MR ELON MUSK</P>      
-</div>
-<DIV class="position">
-    <p style="margin-left:30">FOUNDER</p>
-    <p style="margin-left:40;">CHEIF OPERATING OFFICER</p>
-    <p style="margin-right:40">MANAGING DIRECTOR </p>
-    <p style="margin-right:50">TEAM LEAD </p>
-    <p>BRAND AMBASSADOR </p>
+        background: transparent;
+      }
+      .image table {
+        border: 0;
+        color: white;
+        position: relative;
+        left: 200px;
+        border: 10PX;
+        padding-left: 10px;
+      
+      }
+      .image table img {
+        height: 140px;
+        width: 140px;
+        border: 2px solid white;
+        padding: 5px;
+        border-radius: 50%;
+      }
+      .image table td {
+        color:orange;
+      }
+      footer {
+        border: 1px;
+        padding: 10px;
 
-</DIV>
-</body>
-<footer style="background-color:rgb(0, 0, 0);margin-top: 143; border: none;">
-    <P style="color:#ffffff; ;"align="center">Designed and Devoloped by RAHUL K 212221043006</P>
-</footer>
+        transition: 0.5s;
+        cursor: pointer;
+        border-radius: 30px;
+        background: orange;
+        color: black;
+        box-shadow: 0 0 20px orange;
+      }
+      .space{
+        padding-left: 30px;
+      }
+    </style>
+  </head>
+  <body bgcolor="brown">
+    <div class="banner">
+      <br />
+      <div class="navbar">
+        <h1 class="logo">DI<span>GITAL</span>DR<span>EAMERS</span></h1>
+          <li><a href="home.html"> home </a></li>
+          <li><a href="product.html"> Product </a></li>
+          <li><a href="people.html" class="bg-people"> People </a></li>
+          <li><a href="contact.html"> Contact </a></li>
+        </ul>
+        <form action="" method="get">
+          <input type="text" placeholder="Enter to Search" />
+          <button type="submit">Search</button>
+        </form>
+      </div>
+      <div class="image">
+        <table cellspacing="80" >
+          <tr align="center">
+            <td><img src="FOUNDER.jpg" /></td>
+            <td><img src="COO.jpeg" /></td>
+            <td><img src="MD.png" /></td>
+            <td><img src="Team Lead.jpeg"></td>
+           
+          </tr>
+          <tr align="center" class="space">
+            <th>RAHUL K</th>
+            <th>KIRTIK ROSHAN</th>
+            <th>RAGUL E </th>
+            <th>KISHORE</th>
+            
+            
+          </tr>
+          <tr align="center">
+            <td>FOUNDER</td>
+            <td>COO</td>
+            <td>MD</td>
+            <td>TEAM LEAD</td>
+          
+            
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
 </html>
